@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChooseHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wib-X1-JvQ">
+                    <rect key="frame" x="15" y="-45" width="110" height="110"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="110" id="9Rf-YH-79u"/>
+                        <constraint firstAttribute="width" constant="110" id="izH-M8-3i8"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbM-Wp-KNg">
+                    <rect key="frame" x="209" y="10" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <color key="textColor" red="0.98431372549019602" green="0.19607843137254902" blue="0.027450980392156862" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggL-5H-eFv">
+                    <rect key="frame" x="344" y="15" width="16" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="16" id="A4c-K6-dDV"/>
+                        <constraint firstAttribute="height" constant="16" id="sck-am-mhs"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="叉叉"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="wib-X1-JvQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="0Sf-kw-Iee"/>
+                <constraint firstAttribute="trailing" secondItem="ggL-5H-eFv" secondAttribute="trailing" constant="15" id="1eD-Ph-eiD"/>
+                <constraint firstAttribute="bottom" secondItem="wib-X1-JvQ" secondAttribute="bottom" constant="15" id="Q8b-ab-jjG"/>
+                <constraint firstItem="ggL-5H-eFv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="WvM-X0-kfn"/>
+                <constraint firstItem="vbM-Wp-KNg" firstAttribute="leading" secondItem="wib-X1-JvQ" secondAttribute="trailing" constant="5" id="c2Q-SH-rYc"/>
+                <constraint firstItem="vbM-Wp-KNg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="wLn-3s-ipV"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="264.5" y="173"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="叉叉" width="16" height="16"/>
+    </resources>
+</document>

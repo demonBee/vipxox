@@ -1,0 +1,79 @@
+PODS:
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - hpple (0.2.0)
+  - JSONModel (1.2.0)
+  - pop (1.0.9)
+  - POP+MCAnimate (2.0.1):
+    - pop (~> 1.0)
+    - POP+MCAnimate/Animations (= 2.0.1)
+    - POP+MCAnimate/Group (= 2.0.1)
+    - POP+MCAnimate/Internal (= 2.0.1)
+    - POP+MCAnimate/Shorthand (= 2.0.1)
+    - POP+MCAnimate/Velocity (= 2.0.1)
+  - POP+MCAnimate/Animations (2.0.1):
+    - pop (~> 1.0)
+    - POP+MCAnimate/Group
+    - POP+MCAnimate/Internal
+    - POP+MCAnimate/Shorthand
+    - POP+MCAnimate/Velocity
+  - POP+MCAnimate/Group (2.0.1):
+    - pop (~> 1.0)
+  - POP+MCAnimate/Internal (2.0.1):
+    - pop (~> 1.0)
+  - POP+MCAnimate/Shorthand (2.0.1):
+    - pop (~> 1.0)
+  - POP+MCAnimate/Velocity (2.0.1):
+    - pop (~> 1.0)
+    - POP+MCAnimate/Internal
+  - ReactiveCocoa (2.3.1):
+    - ReactiveCocoa/UI (= 2.3.1)
+  - ReactiveCocoa/Core (2.3.1):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.3.1)
+  - ReactiveCocoa/UI (2.3.1):
+    - ReactiveCocoa/Core
+  - RegexKitLite-NoWarning (1.1.0)
+  - TPKeyboardAvoiding (1.2.4)
+  - TTTAttributedLabel (1.10.1)
+  - YYModel (1.0.3)
+
+DEPENDENCIES:
+  - BlocksKit (= 2.2.5)
+  - hpple (= 0.2.0)
+  - JSONModel
+  - POP+MCAnimate (= 2.0.1)
+  - ReactiveCocoa (= 2.3.1)
+  - RegexKitLite-NoWarning (= 1.1.0)
+  - TPKeyboardAvoiding (= 1.2.4)
+  - TTTAttributedLabel (= 1.10.1)
+  - YYModel
+
+SPEC CHECKSUMS:
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  hpple: 3b765f96fc2cd56ad1a49aef6f7be5cb2aa64b57
+  JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
+  POP+MCAnimate: a99e209148c602512de487f1160a44bf78572024
+  ReactiveCocoa: 3fe9b233ca6db810e86681b5749488564c1179a1
+  RegexKitLite-NoWarning: 365d208f8187997e33d9de8baeddfc00728596d8
+  TPKeyboardAvoiding: 0a40dfbb0af7c8bdae1dd457496dccfd217d85f6
+  TTTAttributedLabel: c8f3801a6463b9c9b82b0c84c465fdda9751892a
+  YYModel: 63142c2f07c5c8c9d1c261689cf3827ea6ab2886
+
+PODFILE CHECKSUM: d6bb4ecdcbec2a30d4fe96ab2b9a17c489bac68a
+
+COCOAPODS: 1.0.0.beta.8

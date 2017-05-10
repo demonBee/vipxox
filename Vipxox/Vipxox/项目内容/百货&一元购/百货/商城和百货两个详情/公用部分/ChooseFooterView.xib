@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChooseFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="数量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTb-58-N8J">
+                    <rect key="frame" x="12" y="10" width="34" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="LSh-so-ai4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61n-Vp-Y4r">
+                    <rect key="frame" x="56" y="0.0" width="34" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="ihW-2Z-hPt"/>
+                        <constraint firstAttribute="width" constant="34" id="rhi-mm-TSd"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="减号"/>
+                    <connections>
+                        <action selector="subtruct:" destination="iN0-l3-epB" eventType="touchUpInside" id="meh-bQ-chp"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLr-1G-LeG">
+                    <rect key="frame" x="90" y="0.0" width="236" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="n5B-Fp-unG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.98431372549019602" green="0.19607843137254902" blue="0.027450980392156862" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ayx-Pc-itY">
+                    <rect key="frame" x="326" y="0.0" width="34" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="Db9-YY-5iw"/>
+                        <constraint firstAttribute="height" constant="34" id="KUd-vh-BMF"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="加号"/>
+                    <connections>
+                        <action selector="addButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="dLP-NT-taV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzx-36-7wQ">
+                    <rect key="frame" x="15" y="49" width="345" height="44"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="a2J-XL-bn9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="确定购买">
+                        <color key="titleColor" red="0.98431372549019602" green="0.19607843137254902" blue="0.027450980392156862" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buyOrCar:" destination="iN0-l3-epB" eventType="touchUpInside" id="KQs-oM-btD"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="DTb-58-N8J" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="1ek-ka-fQ1"/>
+                <constraint firstItem="MLr-1G-LeG" firstAttribute="leading" secondItem="61n-Vp-Y4r" secondAttribute="trailing" id="5Ii-rf-1Ji"/>
+                <constraint firstItem="vzx-36-7wQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="9z3-OA-opL"/>
+                <constraint firstItem="Ayx-Pc-itY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BJG-Y0-GUd"/>
+                <constraint firstItem="61n-Vp-Y4r" firstAttribute="leading" secondItem="DTb-58-N8J" secondAttribute="trailing" constant="10" id="FHl-1P-r1D"/>
+                <constraint firstItem="DTb-58-N8J" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="NSE-Ye-aeu"/>
+                <constraint firstAttribute="trailing" secondItem="MLr-1G-LeG" secondAttribute="trailing" constant="49" id="Wor-ra-cg0"/>
+                <constraint firstItem="vzx-36-7wQ" firstAttribute="top" secondItem="MLr-1G-LeG" secondAttribute="bottom" constant="15" id="Zc0-cG-mJ3"/>
+                <constraint firstItem="61n-Vp-Y4r" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="b1E-PY-TiX"/>
+                <constraint firstAttribute="trailing" secondItem="vzx-36-7wQ" secondAttribute="trailing" constant="15" id="hQD-NG-fcH"/>
+                <constraint firstItem="Ayx-Pc-itY" firstAttribute="leading" secondItem="MLr-1G-LeG" secondAttribute="trailing" id="mXa-UC-yPg"/>
+                <constraint firstItem="MLr-1G-LeG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="w4G-Hs-1Is"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addButton" destination="Ayx-Pc-itY" id="ylc-iY-L3J"/>
+                <outlet property="showLabel" destination="MLr-1G-LeG" id="bzb-VH-X6d"/>
+                <outlet property="subtract" destination="61n-Vp-Y4r" id="agH-lu-wSK"/>
+                <outlet property="sureButton" destination="vzx-36-7wQ" id="9Rp-VG-iHg"/>
+            </connections>
+            <point key="canvasLocation" x="580.5" y="393"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="减号" width="32" height="32"/>
+        <image name="加号" width="32" height="32"/>
+    </resources>
+</document>

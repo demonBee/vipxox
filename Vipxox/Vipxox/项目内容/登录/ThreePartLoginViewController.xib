@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThreePartLoginViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BN0-cF-4BN">
+                    <rect key="frame" x="137" y="78" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="OBA-TQ-yfD"/>
+                        <constraint firstAttribute="height" constant="100" id="qEO-p5-c9G"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="亲爱的微信用户：黄佳峰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYN-mD-mHY">
+                    <rect key="frame" x="20" y="184" width="325" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="为了给您更好的服务，请关联一个vipxox帐号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77m-Uu-5P3">
+                    <rect key="frame" x="20" y="218" width="325" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="还没有vipxox帐号？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eik-Sg-01N">
+                    <rect key="frame" x="20" y="255" width="133.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.52941176470588236" green="0.52941176470588236" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUV-sW-Gs2">
+                    <rect key="frame" x="20" y="277" width="335" height="40"/>
+                    <color key="backgroundColor" red="0.92156862745098034" green="0.22745098039215686" blue="0.25882352941176473" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="AqI-nt-8wQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="快速注册"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已有vipxox帐号？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zyr-5l-Vlq">
+                    <rect key="frame" x="20" y="337" width="111" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.75686274509803919" green="0.75686274509803919" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7m-df-09a">
+                    <rect key="frame" x="20" y="362" width="335" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="2rH-cw-SqZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="立即关联">
+                        <color key="titleColor" red="0.3411764705882353" green="0.3411764705882353" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <view tag="9" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K8y-i4-HSw">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联合登录" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCz-O5-4FD">
+                            <rect key="frame" x="107" y="30" width="160" height="20.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="160" id="SUy-kh-6Rv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="gCz-O5-4FD" firstAttribute="centerX" secondItem="K8y-i4-HSw" secondAttribute="centerX" id="07V-47-Bg4"/>
+                        <constraint firstItem="gCz-O5-4FD" firstAttribute="top" secondItem="K8y-i4-HSw" secondAttribute="top" constant="30" id="p9h-Oa-gMq"/>
+                        <constraint firstAttribute="height" constant="64" id="pc4-nr-ISH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="77m-Uu-5P3" secondAttribute="trailing" constant="30" id="19P-86-TrX"/>
+                <constraint firstItem="oYN-mD-mHY" firstAttribute="top" secondItem="BN0-cF-4BN" secondAttribute="bottom" constant="6" id="ASs-Ag-q9m"/>
+                <constraint firstItem="f7m-df-09a" firstAttribute="trailing" secondItem="sUV-sW-Gs2" secondAttribute="trailing" id="FWs-O4-krx"/>
+                <constraint firstItem="Zyr-5l-Vlq" firstAttribute="leading" secondItem="Eik-Sg-01N" secondAttribute="leading" id="JrJ-kI-PcN"/>
+                <constraint firstItem="oYN-mD-mHY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="NIu-n2-msY"/>
+                <constraint firstItem="f7m-df-09a" firstAttribute="top" secondItem="Zyr-5l-Vlq" secondAttribute="bottom" constant="8" id="PIq-Ky-4Sq"/>
+                <constraint firstItem="f7m-df-09a" firstAttribute="leading" secondItem="sUV-sW-Gs2" secondAttribute="leading" id="QNR-vm-25f"/>
+                <constraint firstAttribute="trailing" secondItem="oYN-mD-mHY" secondAttribute="trailing" constant="30" id="Uz6-9s-M9d"/>
+                <constraint firstItem="BN0-cF-4BN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="78" id="X8P-mW-gA1"/>
+                <constraint firstItem="77m-Uu-5P3" firstAttribute="top" secondItem="oYN-mD-mHY" secondAttribute="bottom" constant="17.5" id="XAw-U5-dut"/>
+                <constraint firstItem="Zyr-5l-Vlq" firstAttribute="top" secondItem="sUV-sW-Gs2" secondAttribute="bottom" constant="20" id="dIu-wV-IWT"/>
+                <constraint firstItem="sUV-sW-Gs2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="dfJ-oh-JZO"/>
+                <constraint firstItem="sUV-sW-Gs2" firstAttribute="top" secondItem="Eik-Sg-01N" secondAttribute="bottom" constant="5" id="erK-J9-pO5"/>
+                <constraint firstAttribute="trailing" secondItem="K8y-i4-HSw" secondAttribute="trailing" id="gKP-tr-As5"/>
+                <constraint firstItem="BN0-cF-4BN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gxN-8e-4xG"/>
+                <constraint firstAttribute="trailing" secondItem="sUV-sW-Gs2" secondAttribute="trailing" constant="20" id="mc9-xe-qX1"/>
+                <constraint firstItem="Eik-Sg-01N" firstAttribute="leading" secondItem="77m-Uu-5P3" secondAttribute="leading" id="pDu-cM-us9"/>
+                <constraint firstItem="K8y-i4-HSw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rXt-ao-4ju"/>
+                <constraint firstItem="K8y-i4-HSw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ukh-RB-aLA"/>
+                <constraint firstItem="77m-Uu-5P3" firstAttribute="leading" secondItem="oYN-mD-mHY" secondAttribute="leading" id="uvJ-t4-naF"/>
+                <constraint firstItem="Eik-Sg-01N" firstAttribute="top" secondItem="77m-Uu-5P3" secondAttribute="bottom" constant="20" id="v8x-Ik-zja"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="270.5" y="161.5"/>
+        </view>
+    </objects>
+</document>

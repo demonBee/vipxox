@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="NewShoppingCarTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kr8-lj-mZj">
+                        <rect key="frame" x="15" y="39" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="Imh-Nl-B19"/>
+                            <constraint firstAttribute="height" constant="22" id="YH8-th-Go2"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="blackBall"/>
+                    </button>
+                    <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hJa-Mu-40h">
+                        <rect key="frame" x="45" y="8" width="75" height="75"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="75" id="cwg-31-izt"/>
+                            <constraint firstAttribute="width" constant="75" id="e8s-XT-EZc"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LION 狮王 White&amp;White特效美白牙膏150g" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDb-2L-Wqv">
+                        <rect key="frame" x="128" y="16" width="227" height="31.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B8q-i4-8Af" customClass="ShoppingCarADDView">
+                        <rect key="frame" x="128" y="59" width="85" height="25"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="CX1-hf-2O0"/>
+                            <constraint firstAttribute="width" constant="85" id="JdJ-IS-HXE"/>
+                        </constraints>
+                    </view>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥192.55" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dT8-T5-rdX">
+                        <rect key="frame" x="291" y="61" width="69" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="anU-W8-igw">
+                        <rect key="frame" x="45" y="98" width="330" height="1"/>
+                        <color key="backgroundColor" red="0.81176470588235294" green="0.81176470588235294" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="OoF-gG-A7c"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" tag="99" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYS-fd-RRa">
+                        <rect key="frame" x="306" y="56" width="62" height="32"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="删除" image="垃圾桶">
+                            <color key="titleColor" red="0.21176470589999999" green="0.22352941179999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="anU-W8-igw" secondAttribute="trailing" id="4Lb-zx-c00"/>
+                    <constraint firstItem="kr8-lj-mZj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="4hq-ps-6wQ"/>
+                    <constraint firstItem="hJa-Mu-40h" firstAttribute="leading" secondItem="kr8-lj-mZj" secondAttribute="trailing" constant="8" id="5lC-mI-faw"/>
+                    <constraint firstItem="B8q-i4-8Af" firstAttribute="leading" secondItem="uDb-2L-Wqv" secondAttribute="leading" id="9DI-Xl-Q2t"/>
+                    <constraint firstItem="hJa-Mu-40h" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="FMA-ww-F4z"/>
+                    <constraint firstItem="zYS-fd-RRa" firstAttribute="centerY" secondItem="B8q-i4-8Af" secondAttribute="centerY" id="FcX-gP-gZk"/>
+                    <constraint firstItem="uDb-2L-Wqv" firstAttribute="top" secondItem="hJa-Mu-40h" secondAttribute="top" constant="5" id="G95-ul-Ijb"/>
+                    <constraint firstItem="uDb-2L-Wqv" firstAttribute="top" secondItem="hJa-Mu-40h" secondAttribute="top" constant="8" id="Gap-RU-bZh"/>
+                    <constraint firstItem="anU-W8-igw" firstAttribute="leading" secondItem="hJa-Mu-40h" secondAttribute="leading" id="Gdx-Hm-v0c"/>
+                    <constraint firstItem="uDb-2L-Wqv" firstAttribute="leading" secondItem="hJa-Mu-40h" secondAttribute="trailing" constant="8" id="IWv-uB-7Vx"/>
+                    <constraint firstAttribute="bottom" secondItem="anU-W8-igw" secondAttribute="bottom" id="Rgq-d9-uCm"/>
+                    <constraint firstAttribute="trailing" secondItem="zYS-fd-RRa" secondAttribute="trailing" constant="15" id="Spe-pU-9oV"/>
+                    <constraint firstItem="kr8-lj-mZj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="XTD-53-6Yo"/>
+                    <constraint firstItem="uDb-2L-Wqv" firstAttribute="leading" secondItem="hJa-Mu-40h" secondAttribute="trailing" constant="8" id="dRN-0N-3w4"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="uDb-2L-Wqv" secondAttribute="trailing" constant="20" id="dX9-Y2-9ix"/>
+                    <constraint firstItem="dT8-T5-rdX" firstAttribute="centerY" secondItem="B8q-i4-8Af" secondAttribute="centerY" id="gUO-GF-Zth"/>
+                    <constraint firstAttribute="trailing" secondItem="uDb-2L-Wqv" secondAttribute="trailing" constant="20" id="jYx-dz-qTH"/>
+                    <constraint firstItem="uDb-2L-Wqv" firstAttribute="leading" secondItem="hJa-Mu-40h" secondAttribute="trailing" constant="5" id="lDj-HJ-7KK"/>
+                    <constraint firstAttribute="bottom" secondItem="B8q-i4-8Af" secondAttribute="bottom" constant="15" id="qsf-rm-nzc"/>
+                    <constraint firstAttribute="trailing" secondItem="uDb-2L-Wqv" secondAttribute="trailing" constant="20" id="sDy-PG-Fa7"/>
+                    <constraint firstItem="B8q-i4-8Af" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="vvd-zQ-RJc"/>
+                    <constraint firstAttribute="trailing" secondItem="dT8-T5-rdX" secondAttribute="trailing" constant="15" id="yHy-im-Wtf"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="G95-ul-Ijb"/>
+                        <exclude reference="IWv-uB-7Vx"/>
+                        <exclude reference="dX9-Y2-9ix"/>
+                        <exclude reference="jYx-dz-qTH"/>
+                        <exclude reference="lDj-HJ-7KK"/>
+                        <exclude reference="vvd-zQ-RJc"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="blackBall" width="23" height="21"/>
+        <image name="垃圾桶" width="32" height="32"/>
+    </resources>
+</document>

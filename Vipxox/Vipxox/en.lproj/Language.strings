@@ -1,0 +1,58 @@
+/* 
+  Language.strings
+  Vipxox
+
+  Created by 黄佳峰 on 16/7/13.
+  Copyright © 2016年 拥吻汇. All rights reserved.
+*/
+
+//tabBar
+"首页"="Home";
+"百货"="Department store";
+"一元购"="happy shop";
+"逛街"="Go shopping";
+"购物车"="Shopping Cart";
+"个人中心"="Me";
+"聊天"="Chat";
+"美食"="Fine Food";
+
+
+
+//系统设置
+"系统设置"="System Settings";
+"账号与安全"="Account and safe";
+"清除缓存"="Clear the cache";
+"关于我们"="About us";
+"意见反馈"="Feedback";
+"退出当前账号"="Exit account";
+"getLanguage" ="Switch to Chinease";
+"当前版本："="Current Version:";
+"清除缓存成功！"="Clear the cache success";
+
+"homeSection0" ="Category";
+
+
+//个人中心
+//第二行9张图片
+"internationalOrder"="en_internationalOrder";
+"currenturyChoose"="en_currenturyChoose";
+"getMoney"="en_getMoney";
+"address"="en_address";
+"collection"="en_collection";
+"pay"="en_pay";
+"trans"="en_trans";
+"accountPay"="en_accountPay";
+"cloudHouse"="en_cloudHouse";
+//第一行的5张图片
+"zh_mall"="en_mall";
+"zh_purchase"="en_purchase";
+"zh_department"="en_department";
+"zh_oneyuango"="en_oneyuango";
+"zh_transOrder"="en_transOrder";
+//文字
+"可用余额"="Available balance";
+"冻结金额"="Freezing amount";
+"积分"="Point";
+
+
+

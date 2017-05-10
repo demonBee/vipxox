@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="NewPersonCenterSection0TableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="新个人中心section0.png" translatesAutoresizingMaskIntoConstraints="NO" id="AyD-6Y-7xd">
+                        <rect key="frame" x="0.0" y="2" width="75" height="75"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="AyD-6Y-7xd" secondAttribute="height" multiplier="1:1" id="HRE-Lu-xFq"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="新个人中心section0.png" translatesAutoresizingMaskIntoConstraints="NO" id="Rza-Ax-TTt">
+                        <rect key="frame" x="75" y="2" width="75" height="75"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Rza-Ax-TTt" secondAttribute="height" multiplier="1:1" id="Yx9-O0-05p"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="新个人中心section0.png" translatesAutoresizingMaskIntoConstraints="NO" id="rJa-CX-X0x">
+                        <rect key="frame" x="150" y="2" width="75" height="75"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="rJa-CX-X0x" secondAttribute="height" multiplier="1:1" id="NIu-ZC-095"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="新个人中心section0.png" translatesAutoresizingMaskIntoConstraints="NO" id="oyx-n9-kwS">
+                        <rect key="frame" x="225" y="2.5" width="75" height="75"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="oyx-n9-kwS" secondAttribute="height" multiplier="1:1" id="Zx3-uC-6mv"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="新个人中心section0.png" translatesAutoresizingMaskIntoConstraints="NO" id="2aB-HW-5ht">
+                        <rect key="frame" x="300" y="2" width="75" height="75"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="2aB-HW-5ht" secondAttribute="height" multiplier="1:1" id="Sb9-6H-wdo"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oyx-n9-kwS" firstAttribute="leading" secondItem="rJa-CX-X0x" secondAttribute="trailing" id="3bj-oM-hVI"/>
+                    <constraint firstItem="2aB-HW-5ht" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="3je-Ea-qUR"/>
+                    <constraint firstItem="AyD-6Y-7xd" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="6Xw-x1-hdX"/>
+                    <constraint firstItem="Rza-Ax-TTt" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="9Ve-0B-eLq"/>
+                    <constraint firstItem="AyD-6Y-7xd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="AJQ-3D-cPM"/>
+                    <constraint firstItem="Rza-Ax-TTt" firstAttribute="leading" secondItem="AyD-6Y-7xd" secondAttribute="trailing" id="BEy-Om-94P"/>
+                    <constraint firstItem="2aB-HW-5ht" firstAttribute="width" secondItem="2aB-HW-5ht" secondAttribute="height" multiplier="1:1" id="Gto-wi-djc"/>
+                    <constraint firstItem="oyx-n9-kwS" firstAttribute="width" secondItem="oyx-n9-kwS" secondAttribute="height" multiplier="1:1" id="IyK-Zg-3GB"/>
+                    <constraint firstItem="Rza-Ax-TTt" firstAttribute="width" secondItem="Rza-Ax-TTt" secondAttribute="height" multiplier="1:1" id="Jun-Vf-sfb"/>
+                    <constraint firstItem="AyD-6Y-7xd" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="1:5" id="LI9-Ms-i8w"/>
+                    <constraint firstItem="rJa-CX-X0x" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Pr5-on-yBL"/>
+                    <constraint firstItem="rJa-CX-X0x" firstAttribute="width" secondItem="Rza-Ax-TTt" secondAttribute="width" id="SKa-pE-aJr"/>
+                    <constraint firstItem="rJa-CX-X0x" firstAttribute="width" secondItem="rJa-CX-X0x" secondAttribute="height" multiplier="1:1" id="UC4-mU-f5N"/>
+                    <constraint firstItem="Rza-Ax-TTt" firstAttribute="leading" secondItem="AyD-6Y-7xd" secondAttribute="trailing" id="Wvo-oo-YVd"/>
+                    <constraint firstItem="Rza-Ax-TTt" firstAttribute="width" secondItem="AyD-6Y-7xd" secondAttribute="width" id="ZFl-kC-LWs"/>
+                    <constraint firstItem="rJa-CX-X0x" firstAttribute="leading" secondItem="Rza-Ax-TTt" secondAttribute="trailing" id="chF-2p-Uhw"/>
+                    <constraint firstItem="oyx-n9-kwS" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dE0-Lm-qBK"/>
+                    <constraint firstItem="2aB-HW-5ht" firstAttribute="leading" secondItem="oyx-n9-kwS" secondAttribute="trailing" id="nig-nd-yhv"/>
+                    <constraint firstItem="oyx-n9-kwS" firstAttribute="width" secondItem="rJa-CX-X0x" secondAttribute="width" id="rh3-0w-wct"/>
+                    <constraint firstItem="2aB-HW-5ht" firstAttribute="width" secondItem="oyx-n9-kwS" secondAttribute="width" id="zGN-Jq-gbh"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="BEy-Om-94P"/>
+                        <exclude reference="Jun-Vf-sfb"/>
+                        <exclude reference="UC4-mU-f5N"/>
+                        <exclude reference="IyK-Zg-3GB"/>
+                        <exclude reference="Gto-wi-djc"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="159.5" y="184"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="新个人中心section0.png" width="150" height="150"/>
+    </resources>
+</document>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BrandCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="172" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="172" height="250"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l8m-St-afj">
+                        <rect key="frame" x="0.0" y="0.0" width="172" height="160"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="l8m-St-afj" secondAttribute="height" multiplier="172:160" id="VVM-Ow-oXm"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KOBAYASHI 小林制药 女性生理期内衣清洗液 120x120ml" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ko3-Vd-grx">
+                        <rect key="frame" x="0.0" y="175" width="172" height="33.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.31764705882352939" green="0.31372549019607843" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$35.09  $46" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPf-aH-jhl">
+                        <rect key="frame" x="0.0" y="218.5" width="172" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Ko3-Vd-grx" secondAttribute="trailing" id="4i0-Dp-EF4"/>
+                <constraint firstItem="l8m-St-afj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4wS-wP-uww"/>
+                <constraint firstItem="l8m-St-afj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Jj2-aK-g0H"/>
+                <constraint firstItem="fPf-aH-jhl" firstAttribute="top" secondItem="Ko3-Vd-grx" secondAttribute="bottom" constant="10" id="JmF-dg-a8g"/>
+                <constraint firstAttribute="trailing" secondItem="l8m-St-afj" secondAttribute="trailing" id="RLX-Ue-f6S"/>
+                <constraint firstAttribute="trailing" secondItem="fPf-aH-jhl" secondAttribute="trailing" id="a5K-1L-KnL"/>
+                <constraint firstItem="Ko3-Vd-grx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mlW-Zu-E9u"/>
+                <constraint firstItem="fPf-aH-jhl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="u52-Hw-R1Q"/>
+                <constraint firstItem="Ko3-Vd-grx" firstAttribute="top" secondItem="l8m-St-afj" secondAttribute="bottom" constant="15" id="ugm-Gv-UBq"/>
+            </constraints>
+        </collectionViewCell>
+    </objects>
+</document>

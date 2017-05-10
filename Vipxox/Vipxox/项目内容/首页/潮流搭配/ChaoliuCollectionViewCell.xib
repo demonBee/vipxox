@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ChaoliuCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="260"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="260"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W0t-By-vQl">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="215"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="W0t-By-vQl" secondAttribute="height" multiplier="160:215" id="1jk-zJ-mg2"/>
+                            <constraint firstAttribute="height" constant="215" id="RF3-xW-GND"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="RF3-xW-GND"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MADNESS MAN BASEBBBBBBB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bw-QI-mEe">
+                        <rect key="frame" x="0.0" y="225" width="160" height="14.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14.5" id="usS-dZ-Ara"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1199.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBb-xQ-Eb4">
+                        <rect key="frame" x="0.0" y="245" width="160" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="W0t-By-vQl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="B4K-tG-3Cg"/>
+                <constraint firstAttribute="trailing" secondItem="8bw-QI-mEe" secondAttribute="trailing" id="By6-Bo-Syd"/>
+                <constraint firstAttribute="trailing" secondItem="W0t-By-vQl" secondAttribute="trailing" id="H7f-Gj-dJg"/>
+                <constraint firstItem="jBb-xQ-Eb4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="J52-bc-xvp"/>
+                <constraint firstAttribute="bottom" secondItem="W0t-By-vQl" secondAttribute="bottom" constant="45" id="VAZ-tx-gUq"/>
+                <constraint firstItem="8bw-QI-mEe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="aZ5-QY-1Ax"/>
+                <constraint firstAttribute="bottom" secondItem="jBb-xQ-Eb4" secondAttribute="bottom" id="bwh-hA-Nh3"/>
+                <constraint firstItem="8bw-QI-mEe" firstAttribute="top" secondItem="W0t-By-vQl" secondAttribute="bottom" constant="10" id="d8S-a4-TLN"/>
+                <constraint firstAttribute="trailing" secondItem="jBb-xQ-Eb4" secondAttribute="trailing" id="lt5-LU-BJD"/>
+                <constraint firstItem="W0t-By-vQl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="tDB-Ez-qfx"/>
+                <constraint firstItem="jBb-xQ-Eb4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="yVe-Pi-Ixf"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="VAZ-tx-gUq"/>
+                    <exclude reference="yVe-Pi-Ixf"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="462" y="212"/>
+        </collectionViewCell>
+    </objects>
+</document>

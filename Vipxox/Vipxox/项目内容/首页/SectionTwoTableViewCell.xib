@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SectionTwoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="377"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="376.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="潮人·搭配" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03E-QP-4ug">
+                        <rect key="frame" x="157" y="10" width="60.5" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="pJw-Ej-6Ja"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="pJw-Ej-6Ja"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uQ-JR-myS">
+                        <rect key="frame" x="195" y="49" width="165" height="165"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="8uQ-JR-myS" secondAttribute="height" multiplier="1:1" id="fpc-wJ-5fW"/>
+                            <constraint firstAttribute="width" constant="165" id="hrV-BZ-0Ra"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hrV-BZ-0Ra"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <action selector="touchTwoButtons:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Fk1-te-j0s"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytP-h4-9Zb">
+                        <rect key="frame" x="15" y="49" width="165" height="165"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="165" id="CcJ-JO-pHB"/>
+                            <constraint firstAttribute="width" secondItem="ytP-h4-9Zb" secondAttribute="height" multiplier="1:1" id="DrU-lI-A2A"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="CcJ-JO-pHB"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <action selector="touchTwoButtons:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ZCr-Y8-wen"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="搭配推荐" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4l-Rt-b66">
+                        <rect key="frame" x="159" y="224" width="56" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8uQ-JR-myS" firstAttribute="width" secondItem="ytP-h4-9Zb" secondAttribute="width" id="1sd-sR-Nzd"/>
+                    <constraint firstItem="03E-QP-4ug" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="5fD-bO-jyk"/>
+                    <constraint firstItem="W4l-Rt-b66" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="232" id="F2a-vT-dwq"/>
+                    <constraint firstItem="8uQ-JR-myS" firstAttribute="leading" secondItem="ytP-h4-9Zb" secondAttribute="trailing" constant="14" id="KnR-9h-rbM"/>
+                    <constraint firstAttribute="bottom" secondItem="W4l-Rt-b66" secondAttribute="bottom" constant="135.5" id="Pef-Cc-70D"/>
+                    <constraint firstItem="8uQ-JR-myS" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="277.5:187.5" id="QCy-ko-ifv"/>
+                    <constraint firstItem="ytP-h4-9Zb" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="97.5:187.5" id="UTC-k0-vmi"/>
+                    <constraint firstItem="W4l-Rt-b66" firstAttribute="top" secondItem="ytP-h4-9Zb" secondAttribute="bottom" constant="10" id="UkY-nb-wXD"/>
+                    <constraint firstItem="8uQ-JR-myS" firstAttribute="centerY" secondItem="ytP-h4-9Zb" secondAttribute="centerY" id="eE2-lK-XQV"/>
+                    <constraint firstItem="ytP-h4-9Zb" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="165:375" id="jaH-68-UB4"/>
+                    <constraint firstItem="03E-QP-4ug" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="pOM-58-MJD"/>
+                    <constraint firstItem="W4l-Rt-b66" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="pmi-Lr-W1P"/>
+                    <constraint firstItem="ytP-h4-9Zb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="49" id="ux7-J2-eMq"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="KnR-9h-rbM"/>
+                        <exclude reference="F2a-vT-dwq"/>
+                        <exclude reference="Pef-Cc-70D"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="button0" destination="ytP-h4-9Zb" id="2s4-4b-Foy"/>
+                <outlet property="button1" destination="8uQ-JR-myS" id="szG-U7-fUr"/>
+            </connections>
+            <point key="canvasLocation" x="290.5" y="227.5"/>
+        </tableViewCell>
+    </objects>
+</document>

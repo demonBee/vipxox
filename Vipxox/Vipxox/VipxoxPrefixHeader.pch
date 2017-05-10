@@ -1,0 +1,207 @@
+//
+//  VipxoxPrefixHeader.pch
+//  Vipxox
+//
+//  Created by 黄佳峰 on 16/2/27.
+//  Copyright © 2016年 拥吻汇. All rights reserved.
+//
+
+#ifndef VipxoxPrefixHeader_pch
+#define VipxoxPrefixHeader_pch
+
+
+#import "AppDelegate.h"
+#import "GlobalInfo.h"         //保存地址
+//#import "HttpManager.h"        //封装的网络请求
+#import "UserSession.h"         //登录信息
+
+#import "UIColor+Art.h"         //16进制  字体 颜色
+#import "UIView+Frame.h"        //.x   setX
+#import "YYModel.h"
+
+//库
+#import "JRToast.h"
+#import "MJRefresh.h"
+#import "AFNetworking.h"
+#import "MBProgressHUD.h"
+#import "Masonry.h"
+#import "SDWebImageManager.h"
+#import "UIButton+WebCache.h"
+#import "HttpManager.h"
+
+#import "UIImageView+WebCache.h"
+#import "AMTumblrHud.h"   // 加载的三个球
+
+#import "TFLabel.h"    //亲哥的 TFBoys
+
+#import "WXApi.h"
+#import <AlipaySDK/AlipaySDK.h>    //阿里
+#import "InternationalLanguage.h"   //国际化
+#import "UIImage+imageColor.h"  //图片分类
+
+//#import "UITableView+FDTemplateLayoutCell.h"     //计算高度
+#import "NSDictionary+Log.h"
+#import "NSArray+Log.h"
+
+//获取屏幕宽度
+#define KScreenWidth  [UIScreen mainScreen].bounds.size.width
+//获取屏幕高度
+#define KScreenHeight [UIScreen mainScreen].bounds.size.height
+//获取导航栏高度
+#define NavigationBarHeight self.navigationController.navigationBar.frame.size.height
+//获取状态栏高度
+#define StatusBarHeight  [[UIApplication sharedApplication] statusBarFrame].size.height
+//获取tabBar的高度
+#define tabbarDeHeight 49
+
+//  设置颜色
+#define RGBCOLOR(a,b,c,d)    [UIColor colorWithRed:a/255.0 green:b/255.0 blue:c/255.0 alpha:d]
+#define kBaseNaviColor @"#ee6265"
+
+//4种颜色默认颜色 男生
+#define ManColor [UIColor colorWithRed:40/255.0 green:44/255.0 blue:40/255.0 alpha:1.0]
+#define YooPink [UIColor colorWithRed:249/255.0 green:64/255.0 blue:136/255.0 alpha:1.0]
+#define BoyColor[UIColor colorWithRed:110/255.0 green:208/255.0 blue:204/255.0 alpha:1.0]
+#define NorthAmercia [UIColor colorWithRed:58/255.0 green:45/255.0 blue:38/255.0 alpha:1.0]
+
+
+//深红色
+#define NewRed  [UIColor colorWithRed:193/255.0 green:0/255.0 blue:22/255.0 alpha:1.0]
+
+
+
+#define baseColor [UIColor colorWithRed:233/255.0 green:73/255.0 blue:80/255.0 alpha:1.0];
+
+
+////是否为iphone4
+#define IS_IPHONE_4 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )480 ) < DBL_EPSILON )
+// 系统版本
+#define iOS7 ([UIDevice currentDevice].systemVersion.doubleValue >= 7.0)
+
+// 自定义打印
+#define XXLog(...) NSLog(__VA_ARGS__)
+
+#ifdef DEBUG // 调试状态, 打开LOG功能
+#define MyLog(...) NSLog(__VA_ARGS__)
+#define MyFunc MyLog(@"%s", __func__);
+#else // 发布状态, 关闭LOG功能
+#define MyLog(...)
+#define MyFunc
+#endif
+
+
+//KScreenHeight/667*height
+
+//比例
+#define ACTUAL_WIDTH(width)   KScreenWidth/375*width
+#define ACTUAL_HEIGHT(height)   KScreenHeight/667*height
+//#define ACTUAL_HEIGHT(height)   KScreenWidth/375*height
+
+//#define BeeScale(height)     KScreenWidth/375*height     //与宽成比例
+//#define BeeScaleWith(with)
+
+//保存进userdefault  里面的参数
+#define kUserDefaults [NSUserDefaults standardUserDefaults]
+
+#define AUTOLOGIN    @"autoLogin"            //自动登录账号
+#define AUTOLOGINCODE   @"autoLoginCode"     //自动登录密
+
+#define ISTHIRDLOGIN    @"isthirdLogin"           //是不是第三方登录
+#define ISTHIRDPARAMS   @"isthirdPARAMS"       //第三方登录的 参数
+
+
+#define ISFIRSTINSTALL    @"isFirstINSTALL"   //第一次安装   用于引导页
+#define KLANGUAGE       @"whichLanguage"     // 那种语言 @"en" 或者 @"zh-Hans"
+
+
+
+
+//判断设备是什么
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_RETINA ([[UIScreen mainScreen] scale] >= 2.0)
+
+#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
+#define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+#define SCREEN_MAX_LENGTH (MAX(SCREEN_WIDTH, SCREEN_HEIGHT))
+#define SCREEN_MIN_LENGTH (MIN(SCREEN_WIDTH, SCREEN_HEIGHT))
+
+#define IS_IPHONE_4_OR_LESS (IS_IPHONE && SCREEN_MAX_LENGTH < 568.0)
+#define IS_IPHONE_5 (IS_IPHONE && SCREEN_MAX_LENGTH == 568.0)
+#define IS_IPHONE_6 (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0)
+#define IS_IPHONE_6P (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
+
+
+#endif /* VipxoxPrefixHeader_pch */
+
+
+
+
+//#import "NSString+Common.h"
+//#import "NSObject+ObjectMap.h"
+//#import "UIImage+Common.h"
+//#import "UILabel+Common.h"
+//#import "ImageSizeManager.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <ReactiveCocoa/RACEXTScope.h>
+
+//#import "UIView+Common.h"
+//#import "UIButton+custom.h"
+
+//常用变量
+#define DebugLog(s, ...) NSLog(@"%s(%d): %@", __FUNCTION__, __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__])
+
+
+#define kPlaceholderMonkeyRoundWidth(_width_) [UIImage imageNamed:[NSString stringWithFormat:@"placeholder_monkey_round_%.0f", _width_]]
+#define kPlaceholderMonkeyRoundView(_view_) [UIImage imageNamed:[NSString stringWithFormat:@"placeholder_monkey_round_%.0f", CGRectGetWidth(_view_.frame)]]
+
+#define kPlaceholderCodingSquareWidth(_width_) [UIImage imageNamed:[NSString stringWithFormat:@"placeholder_coding_square_%.0f", _width_]]
+#define kPlaceholderCodingSquareView(_view_) [UIImage imageNamed:[NSString stringWithFormat:@"placeholder_coding_square_%.0f", CGRectGetWidth(_view_.frame)]]
+
+
+#define kScreen_Height [UIScreen mainScreen].bounds.size.height
+#define kScreen_Width [UIScreen mainScreen].bounds.size.width
+#define kPaddingLeftWidth 15.0
+#define kLoginPaddingLeftWidth 18.0
+#define kMySegmentControl_Height 44.0
+#define kMySegmentControlIcon_Height 70.0
+
+#define kColor999 [UIColor colorWithHexString:@"0x999999"]
+#define kColorTableBG [UIColor colorWithHexString:@"0xfafafa"]
+#define kColorTableSectionBg [UIColor colorWithHexString:@"0xeeeeee"]
+
+#define kDevice_Is_iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+
+
+
+
+#define kScaleFrom_iPhone5_Desgin(_X_) (_X_ * (kScreen_Width/320))
+
+//链接颜色   2种
+#define kLinkAttributes     @{(__bridge NSString *)kCTUnderlineStyleAttributeName : [NSNumber numberWithBool:NO],(NSString *)kCTForegroundColorAttributeName : (__bridge id)[UIColor redColor].CGColor}
+//[UIColor colorWithHexString:@"0x3bbd79"]
+#define kLinkAttributesActive       @{(NSString *)kCTUnderlineStyleAttributeName : [NSNumber numberWithBool:NO],(NSString *)kCTForegroundColorAttributeName : (__bridge id)[[UIColor blueColor] CGColor]}
+//[UIColor colorWithHexString:@"0x1b9d59"]
+
+#define kScreen_Bounds [UIScreen mainScreen].bounds
+#define kKeyWindow [UIApplication sharedApplication].keyWindow
+
+
+#define ESWeak(var, weakVar) __weak __typeof(&*var) weakVar = var
+#define ESStrong_DoNotCheckNil(weakVar, _var) __typeof(&*weakVar) _var = weakVar
+#define ESStrong(weakVar, _var) ESStrong_DoNotCheckNil(weakVar, _var); if (!_var) return;
+
+#define ESWeak_(var) ESWeak(var, weak_##var);
+#define ESStrong_(var) ESStrong(weak_##var, _##var);
+
+/** defines a weak `self` named `__weakSelf` */
+#define ESWeakSelf      ESWeak(self, __weakSelf);
+/** defines a strong `self` named `_self` from `__weakSelf` */
+#define ESStrongSelf    ESStrong(__weakSelf, _self);
+
+
+#define  kBackButtonFontSize 16
+#define  kNavTitleFontSize 18
+#define  kBadgeTipStr @"badgeTip"

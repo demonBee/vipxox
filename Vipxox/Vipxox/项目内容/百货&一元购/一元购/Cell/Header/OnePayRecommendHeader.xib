@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnePayRecommendHeader" id="U6b-Vx-4bR" customClass="OnePayRecommendHeader">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="pXX-6z-cXr">
+                    <rect key="frame" x="0.0" y="5" width="350" height="165"/>
+                    <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mCA-Qr-jcc">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="U6b-Vx-4bR" id="2V7-RJ-ngL"/>
+                        <outlet property="delegate" destination="U6b-Vx-4bR" id="Bhe-Ao-f2g"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="pXX-6z-cXr" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="W3W-Ye-VPp"/>
+                <constraint firstItem="pXX-6z-cXr" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="5" id="YQY-Zc-3fR"/>
+                <constraint firstAttribute="trailing" secondItem="pXX-6z-cXr" secondAttribute="trailing" id="jmE-Df-WZB"/>
+                <constraint firstAttribute="bottom" secondItem="pXX-6z-cXr" secondAttribute="bottom" constant="10" id="wIV-j3-hpw"/>
+            </constraints>
+            <connections>
+                <outlet property="recommendCollectionView" destination="pXX-6z-cXr" id="geO-wS-Ukz"/>
+            </connections>
+            <point key="canvasLocation" x="55" y="81"/>
+        </collectionReusableView>
+    </objects>
+</document>

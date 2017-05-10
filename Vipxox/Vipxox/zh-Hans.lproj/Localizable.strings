@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  Vipxox
+
+  Created by 黄佳峰 on 16/7/13.
+  Copyright © 2016年 拥吻汇. All rights reserved.
+*/
+
+
+//general
+"register" = "注册";
+"login" = "登录";
+"logout" = "登出";
+"password" = "密码";
+"username" = "个人账户";
+"confirmpassword"="确认密码";

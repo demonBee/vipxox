@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FoodCaregoryCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="161" height="267"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="161" height="267"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YESHM商品名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOE-mI-hdk">
+                        <rect key="frame" x="0.0" y="226" width="161" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥59.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktm-qw-YSB">
+                        <rect key="frame" x="0.0" y="244" width="41" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.78823529411764703" green="0.0" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3qD-yz-4dv">
+                        <rect key="frame" x="0.0" y="0.0" width="161" height="214"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="214" id="Xia-hr-Y0w"/>
+                            <constraint firstAttribute="width" secondItem="3qD-yz-4dv" secondAttribute="height" multiplier="161:214" id="xJ1-Ag-rQ2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Xia-hr-Y0w"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="3qD-yz-4dv" secondAttribute="bottom" constant="53" id="4oo-Ci-C5c"/>
+                <constraint firstAttribute="trailing" secondItem="3qD-yz-4dv" secondAttribute="trailing" id="5zN-w8-VCe"/>
+                <constraint firstItem="ktm-qw-YSB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BeH-4k-CvK"/>
+                <constraint firstItem="DOE-mI-hdk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="GAN-Uo-MjS"/>
+                <constraint firstItem="ktm-qw-YSB" firstAttribute="top" secondItem="DOE-mI-hdk" secondAttribute="bottom" constant="4" id="VlZ-Yv-AjM"/>
+                <constraint firstItem="3qD-yz-4dv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="azE-YQ-8HZ"/>
+                <constraint firstItem="DOE-mI-hdk" firstAttribute="top" secondItem="3qD-yz-4dv" secondAttribute="bottom" constant="12" id="duY-vQ-XO8"/>
+                <constraint firstItem="3qD-yz-4dv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qAh-Sx-oBr"/>
+                <constraint firstAttribute="trailing" secondItem="DOE-mI-hdk" secondAttribute="trailing" id="xJa-te-Vzu"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="4oo-Ci-C5c"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="352.5" y="261.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

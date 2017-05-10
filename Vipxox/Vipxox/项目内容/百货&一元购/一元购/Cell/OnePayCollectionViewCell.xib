@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnePayCollectionViewCell" id="gTV-IL-0wX" customClass="OnePayCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="187" height="210"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="187" height="210"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder_100x100" translatesAutoresizingMaskIntoConstraints="NO" id="KGH-68-1Do">
+                        <rect key="frame" x="34" y="10" width="120" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="j3o-AX-bCw"/>
+                            <constraint firstAttribute="height" constant="120" id="sa0-kG-RE2"/>
+                        </constraints>
+                    </imageView>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CYj-qP-K0Z">
+                        <rect key="frame" x="10" y="198" width="105" height="2"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="mBV-JC-Rew"/>
+                        </constraints>
+                        <color key="progressTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </progressView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  开奖进度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="naZ-dG-SKj">
+                        <rect key="frame" x="10" y="172" width="105" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="4NN-h0-Yck"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是一只很好用的苹果手机" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAO-Hl-zbr">
+                        <rect key="frame" x="10" y="128" width="167" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="9cz-6C-imU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wuv-bO-tjc">
+                        <rect key="frame" x="118" y="178" width="64" height="22"/>
+                        <color key="backgroundColor" red="0.2627450980392157" green="0.2627450980392157" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="64" id="lLB-ot-Neu"/>
+                            <constraint firstAttribute="height" constant="22" id="yma-u3-YBK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                        <state key="normal" title="立即购买">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="payNowBtnAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="rOr-lf-BcT"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2QW-52-jEL" customClass="OnePayDrawView">
+                        <rect key="frame" x="0.0" y="0.0" width="187" height="110"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="110" id="K9q-19-8Ft"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="naZ-dG-SKj" firstAttribute="top" secondItem="DAO-Hl-zbr" secondAttribute="bottom" id="3uy-k1-9Sv"/>
+                <constraint firstItem="DAO-Hl-zbr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="ICf-Vd-Xoo"/>
+                <constraint firstAttribute="bottom" secondItem="CYj-qP-K0Z" secondAttribute="bottom" constant="10" id="LcV-Qg-O7H"/>
+                <constraint firstAttribute="trailing" secondItem="DAO-Hl-zbr" secondAttribute="trailing" constant="10" id="R25-z1-oUc"/>
+                <constraint firstAttribute="trailing" secondItem="Wuv-bO-tjc" secondAttribute="trailing" constant="5" id="SH8-qh-nDX"/>
+                <constraint firstItem="CYj-qP-K0Z" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="SUB-xf-Hjy"/>
+                <constraint firstItem="naZ-dG-SKj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="XJB-PQ-1Jg"/>
+                <constraint firstItem="CYj-qP-K0Z" firstAttribute="top" secondItem="naZ-dG-SKj" secondAttribute="bottom" constant="5" id="cq9-qD-rpi"/>
+                <constraint firstAttribute="trailing" secondItem="2QW-52-jEL" secondAttribute="trailing" id="e4J-kl-isZ"/>
+                <constraint firstAttribute="bottom" secondItem="Wuv-bO-tjc" secondAttribute="bottom" constant="10" id="nIR-hj-dNZ"/>
+                <constraint firstItem="Wuv-bO-tjc" firstAttribute="leading" secondItem="naZ-dG-SKj" secondAttribute="trailing" constant="3" id="ngo-l5-j0S"/>
+                <constraint firstItem="2QW-52-jEL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="oIV-GF-o4l"/>
+                <constraint firstItem="2QW-52-jEL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="p8T-M0-isU"/>
+                <constraint firstAttribute="trailing" secondItem="naZ-dG-SKj" secondAttribute="trailing" constant="80" id="py7-fk-cxj"/>
+                <constraint firstItem="CYj-qP-K0Z" firstAttribute="trailing" secondItem="naZ-dG-SKj" secondAttribute="trailing" id="qlQ-0q-Bql"/>
+                <constraint firstItem="KGH-68-1Do" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="vgp-p7-gz6"/>
+                <constraint firstAttribute="trailing" secondItem="CYj-qP-K0Z" secondAttribute="trailing" constant="80" id="xvG-G3-bnb"/>
+                <constraint firstItem="KGH-68-1Do" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="zgO-Vj-ciB"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="py7-fk-cxj"/>
+                    <exclude reference="xvG-G3-bnb"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="introduceLabel" destination="DAO-Hl-zbr" id="BIc-J6-6oe"/>
+                <outlet property="onePayDrawView" destination="2QW-52-jEL" id="NlO-Oa-lcX"/>
+                <outlet property="progressLabel" destination="naZ-dG-SKj" id="8o8-82-gTf"/>
+                <outlet property="progressView" destination="CYj-qP-K0Z" id="20f-89-dIr"/>
+                <outlet property="showImageView" destination="KGH-68-1Do" id="hQ6-yr-rka"/>
+            </connections>
+            <point key="canvasLocation" x="256.5" y="167"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder_100x100" width="50" height="50"/>
+    </resources>
+</document>
